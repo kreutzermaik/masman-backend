@@ -2,8 +2,6 @@ import express from 'express';
 import bodyParser from 'body-parser';
 import pool from './config/db.config';
 import cors from 'cors';
-import GoalController from "./classes/Goals/GoalController";
-import {GoalService} from "./services/GoalService";
 
 class Server {
     private app;
@@ -13,8 +11,6 @@ class Server {
         this.config();
         this.routerConfig();
         this.dbConnect();
-
-        GoalController.getAllGoals();
     }
 
     private config() {

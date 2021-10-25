@@ -13,7 +13,6 @@ router.get("/records", async (req: express.Request, res: express.Response) => {
 
 router.post("/records", async (req: express.Request, res: express.Response) => {
     try {
-        console.log('post request called');
         res.status(200).json(await RecordController.postRecords(req));
     }
     catch(error) {
