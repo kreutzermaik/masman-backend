@@ -5,6 +5,7 @@
   "main": "src/app.ts",
   "scripts": {
     "start": "nodemon --watch \"src/**\" --ext \"ts,json\" --ignore \"src/**/*.spec.ts\" --exec \"ts-node src/app.ts\"",
+    "build": "npx gulp",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
@@ -27,7 +28,16 @@
     "pg": "^8.5.1",
     "reflect-metadata": "^0.1.13",
     "sequelize": "^6.3.4",
-    "winston": "^3.3.3"
+    "winston": "^3.3.3",
+    "webpack": "^5.37.0",
+    "webpack-cli": "^4.7.0",
+    "webpack-node-externals": "^3.0.0",
+    "ts-loader": "^9.1.2",
+    "ts-node": "^9.1.1",
+    "gulp": "^4.0.2",
+    "gulp-cli": "^2.0.1",
+    "gulp-replace": "^1.0.0",
+    "gulp-run": "^1.7.1"
   },
   "devDependencies": {
     "@types/cors": "^2.8.10",
